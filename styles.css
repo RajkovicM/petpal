@@ -1,5 +1,57 @@
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
+nav {
+  width: 50%;
+  max-width: 300px;
+  height: 50px;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-inline-start: 0;
+  margin-block: 0;
+  height: 100%;
+}
+
+nav > ul > li {
+  color: #dfdfe2;
+  margin: 0 0.2rem;
+  padding: 0.2rem;
+  display: block;
+}
+
+nav > ul > li:hover {
+  background-color: #A4243B;
+  color: #1b1b32;
+  cursor: pointer;
+}
+
+li > a {
+  color: #D8973C;
+  text-decoration: none;
+}
+
 h1 {
   text-align: center;
-  color: #fdb347;
-  background-color: #B16C5D;
+  color: #BD632F;
 }
+
+*{
+  background-color: #FFF0C5;
+}
+
+.submit{
+  background-color: white;
+}
+
+h2, h3, h4{
+  text-align: center;
+}
+

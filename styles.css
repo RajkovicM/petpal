@@ -75,13 +75,11 @@ h2, h3, h4{
   width: 100%; 
   aspect-ratio: 1;
   cursor: pointer;
-  filter: grayscale();
   z-index: 0;
   transition: .25s,z-index 0s .25s;
 }
 .gallery > img:hover {
   width: calc(200% + var(--g));
-  filter: grayscale(0);
   z-index: 1;
   --_c: 50%;
   transition: .4s,z-index 0s;

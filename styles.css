@@ -102,3 +102,13 @@ h2, h3, h4{
   clip-path: circle(var(--_c,55% at 30% 30%));
   place-self: end;
 }
+
+footer {
+  background-color: #BD632F;
+  display: flex;
+  justify-content: center;
+}
+
+footer a {
+  color: #FFF0C5;
+}

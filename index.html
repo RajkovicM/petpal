@@ -26,9 +26,9 @@
 </p>
 <div class="gallery">
   <img src="./img1.JPG">
-  <img src="./img2.jpg">
-  <img src="./img3.jpg">
-  <img src="./img4.jpg">
+  <img src="./img2.JPG">
+  <img src="./img3.JPG">
+  <img src="./img4.JPG">
 </div>
   </body>
   <main>
@@ -43,9 +43,12 @@
       <p>Booking with PetPal is easy and convenient. Simply browse our website to learn more about our services and meet our team of pet lovers. Then, schedule a complimentary meet-and-greet to introduce us to your pets and discuss their routine and preferences. Once you're ready to book, you can easily manage your appointments online and even request specific sitters for future visits.
 
 </p>
+<form>
+  <fieldset>
+    <legend>BOOK HERE</legend>
       <div class="info">
         <label for="customer-name">Name:</label>
-        <input id="customer-name" name="customer-name" type="text" placeholder="Bob"/>
+        <input id="customer-name" name="customer-name" type="text" placeholder="John Smith"/>
       </div>
       <div class="info">
         <label for="customer-email">Email:</label>
@@ -63,14 +66,23 @@
         <label for="num-pets">Number of Pets:</label>
         <input id="num-pets" name="num-pets" type="number" min="1" max="10" required/>
       </div>
+      <div class="info">
+        <label for="type-pets">Type of Pets:</label>
+        <input type="radio" id="type-pets" checked/>
+        <input type="radio" id="type-pets"/>
+        <input type="radio" id="type-pets"/>
+        <input type="radio" id="type-pets"/>
+        </div>
       <input type="submit" value="Submit" class="submit">
+      </fieldset>
+      </form>
     </section>
     <section role="region" aria-labelledby="calendar">
-      <center><iframe src="https://calendar.google.com/calendar/embed?height=500&wkst=1&ctz=America%2FLos_Angeles&bgcolor=%23F09300&title=PetPal&showPrint=0&showTabs=0&showCalendars=0&showTitle=0&showTz=0&src=ZDQ0MzA4YjQ3M2JlN2FjN2I4MjBkMjEzZDlkYjk3YzU4MjZlYWFkZDk5Y2ZkMTUxNzQ4Mjk3YjAwZWFkMmFhMEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23F09300" style="border:solid 15px #F09303" width="600" height="400" frameborder="0" scrolling="no"></iframe></center>
+      <center><iframe id="calendar"  class="calendar" src="https://calendar.google.com/calendar/embed?height=500&wkst=1&ctz=America%2FLos_Angeles&bgcolor=%23F09300&title=PetPal&showPrint=0&showTabs=0&showCalendars=0&showTitle=0&showTz=0&src=ZDQ0MzA4YjQ3M2JlN2FjN2I4MjBkMjEzZDlkYjk3YzU4MjZlYWFkZDk5Y2ZkMTUxNzQ4Mjk3YjAwZWFkMmFhMEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23F09300" style="border:solid 15px #F09303" width="600" height="400" frameborder="0" scrolling="no"></iframe></center>
     </section>
     <section role="region" aria-labelledby="frequently-asked">
       <h1 id="frequently-asked">Frequently Asked Questions</h1>
-      <ul>
+      <ul class="faq">
         <li>What types of animals have you worked with before?</li>
         <li>What specific duties will you fulfill?</li>
         <li>What will you do in the event of an emergency?</li>

@@ -11,8 +11,9 @@
     <link rel="icon" type="image/x-icon" href="./pawprint.png">
   </head>
   <body>
-    <header class="header">
+    <header>
       <h1>PetPal</h1>
+      <flexbox id="nav">
       <nav>
         <ul>
           <li><a href="#about-us">ABOUT US</a></li>
@@ -21,17 +22,19 @@
           <li><a href="#frequently-asked">FAQ</a></li>
         </ul>
         </nav>
-    </header>
-    <p id="catchphrase">In our care your pets will be pawsitively pampered.
+        </flexbox>
+        <p id="catchphrase">In our care your pets will be pawsitively pampered.
 </p>
-<div class="gallery">
+    </header>
+  <main>
+    <flexbox id="gallery">
+    <div class="gallery">
   <img src="./img1.JPG">
   <img src="./img2.jpg">
   <img src="./img3.jpg">
   <img src="./img4.jpg">
 </div>
-  </body>
-  <main>
+</flexbox>
     <section role="region" aria-labelledby="about-us">
       <h1 id="about-us">About Us</h1>
       <p>At PetPal, we understand that your pets are part of your family. That's why we're dedicated to providing top-notch care for your furry, feathered, or scaly friends while you're away. Whether you're traveling for business or pleasure, you can trust us to give your pets the love and attention they deserve in the comfort of their own home.</p>
@@ -43,51 +46,78 @@
       <p>Booking with PetPal is easy and convenient. Simply browse our website to learn more about our services and meet our team of pet lovers. Then, schedule a complimentary meet-and-greet to introduce us to your pets and discuss their routine and preferences. Once you're ready to book, you can easily manage your appointments online and even request specific sitters for future visits.
 
 </p>
-<form>
-  <fieldset>
-    <legend>BOOK HERE</legend>
-      <div class="info">
-        <label for="customer-name">Name:</label>
-        <input id="customer-name" name="customer-name" type="text" placeholder="John Smith"/>
-      </div>
-      <div class="info">
-        <label for="customer-email">Email:</label>
-        <input id="customer-email" name="customer-email" type="email" required/>
-      </div>
-      <div class="info">
-        <label for="start-date">Start Date:</label>
-        <input id="start-date" name="start-date" type="date" required/>
-      </div>
-      <div class="info">
-        <label for="end-date">End Date:</label>
-        <input id="end-date" name="end-date" type="date" required/>
-      </div>
-      <div class="info">
-        <label for="num-pets">Number of Pets:</label>
-        <input id="num-pets" name="num-pets" type="number" min="1" max="10" required/>
-      </div>
-      <div class="info">
-        <label for="type-pets">Type of Pets:</label>
-        <input type="radio" id="type-pets" checked/>
-        <input type="radio" id="type-pets"/>
-        <input type="radio" id="type-pets"/>
-        <input type="radio" id="type-pets"/>
+
+<div class="container">
+    <div class="title">Book Here</div>
+    <div class="content">
+      <form action="#">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Name</span>
+            <input type="text" placeholder="Enter your name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="email" placeholder="Enter email" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="text" placeholder="Enter your number" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Address</span>
+            <input type="text" placeholder="Enter your home address" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Start Date</span>
+            <input type="date" required>
+          </div>
+          <div class="input-box">
+            <span class="details">End Date</span>
+            <input type="date" required>
+          </div>
         </div>
-      <input type="submit" value="Submit" class="submit">
-      </fieldset>
+        <div class="gender-details">
+          <input type="radio" name="gender" id="dot-1">
+          <input type="radio" name="gender" id="dot-2">
+          <input type="radio" name="gender" id="dot-3">
+          <span class="gender-title">Gender</span>
+          <div class="category">
+            <label for="dot-1">
+            <span class="dot one"></span>
+            <span class="gender">Cats</span>
+          </label>
+          <label for="dot-2">
+            <span class="dot two"></span>
+            <span class="gender">Dogs</span>
+          </label>
+          <label for="dot-3">
+            <span class="dot three"></span>
+            <span class="gender">Other</span>
+            </label>
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="Submit">
+        </div>
       </form>
+    </div>
+  </div>
+
+
+      
     </section>
     <section role="region" aria-labelledby="calendar">
       <center><iframe id="calendar"  class="calendar" src="https://calendar.google.com/calendar/embed?height=500&wkst=1&ctz=America%2FLos_Angeles&bgcolor=%23F09300&title=PetPal&showPrint=0&showTabs=0&showCalendars=0&showTitle=0&showTz=0&src=ZDQ0MzA4YjQ3M2JlN2FjN2I4MjBkMjEzZDlkYjk3YzU4MjZlYWFkZDk5Y2ZkMTUxNzQ4Mjk3YjAwZWFkMmFhMEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23F09300" style="border:solid 15px #F09303" width="600" height="400" frameborder="0" scrolling="no"></iframe></center>
     </section>
     <section role="region" aria-labelledby="frequently-asked">
       <h1 id="frequently-asked">Frequently Asked Questions</h1>
-      <ul class="faq">
-        <li>What types of animals have you worked with before?</li>
-        <li>What specific duties will you fulfill?</li>
-        <li>What will you do in the event of an emergency?</li>
-        <li>Can you meet with my pets and me in advance?</li>
-        <li></li>
+      <ul id="faq">
+        <li><a id="faq">What types of animals have you worked with before?</a></li>
+        <li><a id="faq">What specific duties will you fulfill?</a></li>
+        <li><a id="faq">What will you do in the event of an emergency?</a></li>
+        <li><a id="faq">Can you meet with my pets and me in advance?</a></li>
+        <li><a id="faq"></a></li>
       </ul>
     </section>
   </main>
@@ -98,4 +128,5 @@
         California<br />
       </address>
     </footer>
+  </body>
 <html>

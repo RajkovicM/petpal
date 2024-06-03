@@ -10,10 +10,6 @@ body{
   margin: 0;
 }
 
-p{
-  margin: 0;
-}
-
 header{
   text-align: center;
 }
@@ -141,18 +137,18 @@ footer address, footer a{
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 10 100 10 100;
+  margin: 10px 100px 10px 100px;
   font-size: 20px;
 }
 
 iframe{
-  margin-top: 100;
+  margin-top: 100px;
 }
 
 h1{
   font-size: 50px;
-  margin-top: 100;
-  margin-bottom: 80;
+  margin-top: 100px;
+  margin-bottom: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -160,15 +156,15 @@ h1{
 
 h2{
   font-size: 35px;
-  margin-top: 100;
-  margin-bottom: 80;
+  margin-top: 100px;
+  margin-bottom: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .container{
-  margin: 50 auto;
+  margin: 50px auto;
   max-width: 700px;
   width: 100%;
   background-color: #FFECB6;
@@ -314,5 +310,6 @@ text-decoration: none;
 
 #question{
   font-size: 25;
+  list-style: none;
   color: #A4243B;
 }

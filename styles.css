@@ -213,51 +213,26 @@ form .input-box span.details{
   font-size: 16px;
   border-radius: 5px;
   padding-left: 15px;
-  border: 1px solid #BD632F;
+  border: 1px solid #F09303;
   border-bottom-width: 2px;
   transition: all 0.3s ease;
+  color: #BD632F;
+}
+
+::placeholder {
+  color: #BD632F;
 }
 .user-details .input-box input:focus,
 .user-details .input-box input:valid{
   border-color: #F09303;
 }
- form .gender-details .gender-title{
-  font-size: 20px;
-  font-weight: 500;
- }
- form .category{
-   display: flex;
-   width: 80%;
-   margin: 14px 0 ;
-   justify-content: space-between;
- }
- form .category label{
-   display: flex;
-   align-items: center;
-   cursor: pointer;
- }
- form .category label .dot{
-  
-  height: 18px;
-  width: 18px;
-  border-radius: 50%;
-  margin-right: 10px;
-  background: #d9d9d9;
-  border: 5px solid transparent;
-  transition: all 0.3s ease;
+form{
+  background-color: #FFECB6;
 }
- #dot-1:checked ~ .category label .one,
- #dot-2:checked ~ .category label .two,
- #dot-3:checked ~ .category label .three{
-   background: #F09303;
-   border-color: #d9d9d9;
- }
- form input[type="radio"]{
-   display: none;
- }
+
  form .button{
    height: 45px;
-   margin: 35px 0
+   margin: 35px 0;
  }
  form .button input{
    height: 100%;
@@ -285,9 +260,6 @@ form .user-details .input-box{
     margin-bottom: 15px;
     width: 100%;
   }
-  form .category{
-    width: 100%;
-  }
   .content form .user-details{
     max-height: 300px;
     overflow-y: scroll;
@@ -302,10 +274,12 @@ form .user-details .input-box{
   }
 }
 
+.faq{
+  margin: 50px 100px 100px 100px;
+}
 
 .faq > li > a{
   font-size: 20px;
-text-decoration: none;
 }
 
 #question{

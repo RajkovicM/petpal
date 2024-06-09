@@ -16,7 +16,6 @@ header{
 
 #catchphrase{
   font-size: 30px;
-
 }
 
 #nav{
@@ -69,7 +68,7 @@ nav > ul > li:hover {
 nav > ul > li > a {
   color: #F09303;
   text-decoration: none;
-text-decoration-thickness: 3px;
+  text-decoration-thickness: 3px;
 }
 
 .info{
@@ -137,7 +136,7 @@ footer address, footer a{
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 10px 500px 10px 500px;
+  margin: 10px 300px 10px 300px;
   font-size: 20px;
 }
 
